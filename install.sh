@@ -7,11 +7,15 @@
 #https://rureka.com/brainfuck-psiphon-pro-go-version-untuk-openwrt-linux-macos-dan-windows/
 
 
-echo "Welcome to simple setup brainF"
-echo " Requirement : Termux, Socksdroid/tun2tap/proxydroid(root)"
-echo "credit : aztecrabbit,rureka.com,woiden group"
-echo "For Sockdroid and others apps you can install it from Playstore"
-read -p "Press any key to start"
+echo "              Welcome to simple setup BrainF"
+echo "      Requirement : Termux, Socksdroid/tun2tap/proxydroid(root)"
+echo "---------------------------------------------------------------"
+echo "  Credit : aztecrabbit, rureka.com, Woiden group"
+echo "---------------------------------------------------------------"
+echo ""
+echo "  For Sockdroid and others apps you can install it from Playstore"
+echo ""
+read -p "   Press any key to start"
 mkdir Brainfuck
 cd Brainfuck
 echo "Downloading and extracting essential files"
