@@ -24,7 +24,7 @@ curl -O -s -# http://mraa.me/brf.zip
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
 #curl -o brf.zip http://rureka.com/download/brainfuck-psiphon-pro-go/brainfuck-psiphon-pro-go-linux-amd64.zip
-unzip -j -n brf.zip
+unzip brf.zip
 echo "SETUP COMPLETE"
 echo "Please run './startGamemax' next time to start brainfuck"
 read -p "Press any key to exit," 
