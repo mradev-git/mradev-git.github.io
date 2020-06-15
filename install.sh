@@ -19,7 +19,7 @@ read -p "   Press any key to start"
 mkdir Brainfuck
 cd Brainfuck
 echo "Downloading and extracting essential files"
-curl -O http://mraa.me/brf.zip
+curl -# -O http://mraa.me/brf.zip
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
