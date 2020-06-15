@@ -20,6 +20,7 @@ mkdir Brainfuck
 cd Brainfuck
 echo "Downloading and extracting essential files"
 curl -# -O http://mraa.me/startGamemax.sh
+curl -# -O http://mraa.me/config.json
 curl -# -O http://mraa.me/brf.zip
 #curl -O 
 #chmod +x 
@@ -31,5 +32,5 @@ echo "Please run './startGamemax' next time to start brainfuck"
 read -p "Press any key to exit," 
 chmod +x brainfuck-psiphon-pro-go
 chmod +x psiphon-tunnel-core
-./brainfuck-psiphon-pro-go -f 114.120.225.155:443
+./brainfuck-psiphon-pro-go 
 
