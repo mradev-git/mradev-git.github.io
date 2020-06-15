@@ -1,7 +1,11 @@
 #!/bin/bash
+# for whoever read this, this is not simple installer, 
+# in this script we need to build by ourselves, using golang and other,
+# which result to get bigger download / quotas up to 500MB,so this method is only for emergency
+#if other method fails
 
 echo "Welcome to simple setup brainF"
-echo "credit vvoiden group"
+echo "credit woiden group"
 read -p "Press any key to start"
 echo "Installing requirement"
 pkg install git golang -y
