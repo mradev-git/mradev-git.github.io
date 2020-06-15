@@ -1,0 +1,31 @@
+{
+	"ProxyRotator": {
+		"Port": "3080"
+	},
+	"Inject": {
+		"Type": 2,
+		"Port": "8989",
+		"Rules": {
+			"akamai.net:443": [
+				"114.120.225.155:443"							
+			]
+		},
+		"Payload": "",
+		"Timeout": 5,
+		"ServerNameIndication": "1.1.1.1",
+		"ShowLog": false
+	},
+	"PsiphonCore": 8,
+	"Psiphon": {
+		"CoreName": "psiphon-tunnel-core.exe",
+		"Tunnel": 2,
+		"Region": "",
+		"Protocols": [
+			"FRONTED-MEEK-HTTP-OSSH",
+			"FRONTED-MEEK-OSSH"
+		],
+		"TunnelWorkers": 6,
+		"KuotaDataLimit": 0,
+		"Authorizations": ["eyJBdXRob3JpemF0aW9uIjp7IklEIjoiQTRvUkFlVWFadkk5ZDFpQ3VFWXVkcllPMXB2SHdJT1BqcExDL3hsdGdCcz0iLCJBY2Nlc3NUeXBlIjoiZ29vZ2xlLXN1YnNjcmlwdGlvbiIsIkV4cGlyZXMiOiIyMDIwLTA2LTE1VDE2OjI5OjM5WiJ9LCJTaWduaW5nS2V5SUQiOiJSY1g1K0pBZVVPam9XY0hvajQ1NjhYc1ZsQWJzMFFhc0FqKzFBRDYrbndRPSIsIlNpZ25hdHVyZSI6IkpzS0V2eElCenc3U1JnZjVrSEdDaWoyb0pCdHRJRVV4Y3BPVUpDaWcrMlZESWFxTFMwMHQyWTJ0MVZuckZJUmJEQ05oSnkvVHE5WnlSc0M5TmFCOEJnPT0ifQ=="]
+	}
+}
