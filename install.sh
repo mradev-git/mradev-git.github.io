@@ -15,14 +15,16 @@ read -p "Press any key to start"
 mkdir Brainfuck
 cd Brainfuck
 echo "Downloading and extracting essential files"
-curl -o brf.zip http://mraa.me/brainfuck-psiphon-pro-go-arm.zip
+curl -o brf.zip -s http://mraa.me/brainfuck-psiphon-pro-go-arm.zip
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
 #curl -o brf.zip http://rureka.com/download/brainfuck-psiphon-pro-go/brainfuck-psiphon-pro-go-linux-amd64.zip
-unzip -j -n -P rureka-psiphon brf.zip
+unzip -j -n brf.zip
 echo "SETUP COMPLETE"
 echo "Please run './startGamemax' next time to start brainfuck"
 read -p "Press any key to exit," 
+chmod +x brainfuck-psiphon-pro-go
+chmod +x psiphon-tunnel-core
 ./brainfuck-psiphon-pro-go
-exit
+
