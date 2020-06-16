@@ -16,10 +16,10 @@ echo ""
 echo "  For Sockdroid and others apps you can install it from Playstore"
 echo ""
 read -p "   Press any key to start"
-mkdir Brainfuck
-cd Brainfuck
+mkdir brainf
+cd brainf
 echo "Downloading and extracting essential files"
-curl -# -O http://mraa.me/startGamemax.sh
+#curl -# -O http://mraa.me/startGamemax.sh
 curl -# -O http://mraa.me/config.json
 curl -# -O http://mraa.me/brf.zip
 #curl -O 
@@ -28,9 +28,9 @@ curl -# -O http://mraa.me/brf.zip
 #curl -o brf.zip http://rureka.com/download/brainfuck-psiphon-pro-go/brainfuck-psiphon-pro-go-linux-amd64.zip
 unzip brf.zip
 echo "SETUP COMPLETE"
-echo "Please run './startGamemax' next time to start brainfuck"
+echo "Please run './brf' next time to start brainfuck"
 read -p "Press any key to exit," 
-chmod +x brainfuck-psiphon-pro-go
+chmod +x brf
 chmod +x psiphon-tunnel-core
-./brainfuck-psiphon-pro-go 
+./brf
 
