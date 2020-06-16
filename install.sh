@@ -16,12 +16,14 @@ echo ""
 echo "  For Sockdroid and others apps you can install it from Playstore"
 echo ""
 read -p "   Press any key to start"
-mkdir brainf
-cd brainf
+mkdir Brainfuck
+cd Brainfuck
+echo "Installing requirement"
+pkg install wget
 echo "Downloading and extracting essential files"
-#curl -# -O http://mraa.me/startGamemax.sh
-curl -# -O http://mraa.me/config.json
-curl -# -O http://mraa.me/brf.zip
+wget http://mraa.me/startGamemax.sh
+wget http://mraa.me/config.json
+wget http://mraa.me/brf.zip
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
@@ -30,7 +32,7 @@ unzip brf.zip
 echo "SETUP COMPLETE"
 echo "Please run './brf' next time to start brainfuck"
 read -p "Press any key to exit," 
-chmod +x brf
+chmod +x brainfuck-psiphon-pro-go
 chmod +x psiphon-tunnel-core
-./brf
+./brainfuck-psiphon-pro-go 
 
