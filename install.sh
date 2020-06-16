@@ -16,19 +16,14 @@ echo ""
 echo "  For Sockdroid and others apps you can install it from Playstore"
 echo ""
 read -p "   Press any key to start"
-<<<<<<< HEAD
 mkdir Brainfuck
 cd Brainfuck
 echo "Installing requirement"
 pkg install wget -y
-=======
-mkdir brainf
-cd brainf
->>>>>>> parent of cc9e1d1... Changing from curl to wget
 echo "Downloading and extracting essential files"
 #curl -# -O http://mraa.me/startGamemax.sh
-curl -# -O http://mraa.me/config.json
-curl -# -O http://mraa.me/brf.zip
+wget http://mraa.me/config.json
+wget http://mraa.me/brf.zip
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
