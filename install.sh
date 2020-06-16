@@ -19,7 +19,7 @@ read -p "   Press any key to start"
 mkdir Brainfuck
 cd Brainfuck
 echo "Installing requirement"
-pkg install wget
+pkg install wget -y
 echo "Downloading and extracting essential files"
 wget http://mraa.me/startGamemax.sh
 wget http://mraa.me/config.json
