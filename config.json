@@ -6,8 +6,9 @@
 		"Type": 2,
 		"Port": "8989",
 		"Rules": {
-			"akamai.net:443": [
-				"114.120.225.155:443"
+			"fastly.net:443": [
+				"c.shared.global.fastly.net:443",
+				"rg-video.ruangguru.com:443"
 
 			]
 		},

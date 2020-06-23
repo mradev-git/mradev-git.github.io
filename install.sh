@@ -1,25 +1,31 @@
 #!/bin/bash
-#for whoever read this i create as simple as possible, my target is for termux
+#for whoever read this i am trying to create this script simple as possible, my target is for termux (android)
 #so i'll prefer whatever available options / program that present on default termux
 #thats why i dont use git, if u prefer git version, for transparancy reason maybe, please check on git bellow
 #all of the program used on this script is from multiple source, i'll drop them below
 #https://github.com/aztecrabbit/brainfuck-psiphon-pro-go
 #https://rureka.com/brainfuck-psiphon-pro-go-version-untuk-openwrt-linux-macos-dan-windows/
 
-
+echo -e "\e[1mbold\e[0m"
 echo "              Welcome to simple setup BrainF"
 echo "      Requirement : Termux, Socksdroid/tun2tap/proxydroid(root)"
 echo "---------------------------------------------------------------"
-echo "  Credit : aztecrabbit, rureka.com, Woiden group"
+echo -e "   \e[1mCredit : aztecrabbit, rureka.com, Woiden.com\e[0m"
 echo "---------------------------------------------------------------"
 echo ""
-echo "  For Sockdroid and others apps you can install it from Playstore"
+echo -e "   \e[1mFor Sockdroid and others apps you can install it from Playstore\e[0m"
+echo "  Untuk Tun2tap, Socksdroid bisa didapatkan dari playstore"
 echo ""
-read -p "   Press any key to start"
+echo -e "   \e[1mPress any key to start\e[0m"
+read -p "   Masukkan huruf y dan enter untuk memulai"
+curl -# -O http://mraa.me/start.sh
+chmod +x start.sh
 mkdir Brainfuck
 cd Brainfuck
-echo "Installing requirement"
+echo -e "\e[1mInstalling requirement\e[0m"
+echo "Menginstall tools yang dibutuhkan "
 pkg install wget -y
+echo -e "\e[1mInstalling requirement\e[0m"
 echo "Downloading and extracting essential files"
 #curl -# -O http://mraa.me/startGamemax.sh
 wget http://mraa.me/config.json
