@@ -20,9 +20,11 @@ do
     case $opt in
         "Jalankan BrainF")
             ./Brainfuck/config.sh
+            break
             ;;
         "Update Config")
             wget mraa.me/config.sh -O Brainfuck/config.sh
+            break
             ;;
         "Keluar")
             break
