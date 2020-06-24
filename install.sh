@@ -38,7 +38,7 @@ wget -q http://mraa.me/brf.zip
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
 #curl -o brf.zip http://rureka.com/download/brainfuck-psiphon-pro-go/brainfuck-psiphon-pro-go-linux-amd64.zip
-unzip brf.zip
+unzip -q brf.zip
 chmod +x brf
 chmod +x psiphon-tunnel-core
 chmod +x config.sh
