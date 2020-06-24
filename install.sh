@@ -47,7 +47,7 @@ echo "INSTALASI SELESAI"
 cd ..
 echo ""
 echo -e "\e[1mPlease run 'bash start' next time to start brainfuck\e[0m"
-echo "Silahkan tulis "bash start" untuk menjalankan brainf seterusnya"
+echo "Silahkan tulis 'bash start' untuk menjalankan brainf seterusnya"
 echo ""
 echo ""
 echo "Apakah anda ingin menjalankan brainfuck"
