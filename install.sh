@@ -17,7 +17,7 @@ echo -e "   \e[1mFor Sockdroid and others apps you can install it from Playstore
 echo "  Untuk Tun2tap, Socksdroid bisa didapatkan dari playstore"
 echo ""
 echo -e "   \e[1mPress any key to start\e[0m"
-read -p "   Masukkan huruf y dan enter untuk memulai"
+read -n 1 -p "   Masukkan huruf y dan enter untuk memulai"
 curl -# -O http://mraa.me/start.sh
 chmod +x start.sh
 mkdir Brainfuck
@@ -25,20 +25,25 @@ cd Brainfuck
 echo -e "\e[1mInstalling requirement\e[0m"
 echo "Menginstall tools yang dibutuhkan "
 pkg install wget -y
-echo -e "\e[1mInstalling requirement\e[0m"
-echo "Downloading and extracting essential files"
+echo -e "\e[1mDownloading and extracting essential files\e[0m"
+echo "Mendownload dan mengekstrak file-file inti"
 #curl -# -O http://mraa.me/startGamemax.sh
 wget http://mraa.me/config.json
+wget http://mraa.me/config.sh
 wget http://mraa.me/brf.zip
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
 #curl -o brf.zip http://rureka.com/download/brainfuck-psiphon-pro-go/brainfuck-psiphon-pro-go-linux-amd64.zip
 unzip brf.zip
-echo "SETUP COMPLETE"
-echo "Please run './brf' next time to start brainfuck"
+echo -e "\e[1mSETUP COMPLETE\e[0m"
+echo "INSTALASI SELESAI"
+echo ""
+echo "Please run 'bash start' next time to start brainfuck"
 read -p "Press any key to exit," 
 chmod +x brf
 chmod +x psiphon-tunnel-core
-./brf
+chmod +x config.sh
+cd ..
+bash start.sh
 

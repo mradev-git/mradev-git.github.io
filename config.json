@@ -15,14 +15,14 @@
 		},
 		"Payload": "",
 		"Timeout": 5,
-		"ServerNameIndication": "twitter.com",
+		"ServerNameIndication": "www.google.com",
 		"ShowLog": false
 	},
-	"PsiphonCore": 26,
+	"PsiphonCore": 20,
 	"Psiphon": {
 		"CoreName": "psiphon-tunnel-core",
 		"Tunnel": 1,
-		"Region": "",
+		"Region": "SG",
 		"Protocols": [
 			"FRONTED-MEEK-HTTP-OSSH",
 			"FRONTED-MEEK-OSSH"
