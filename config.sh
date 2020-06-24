@@ -9,11 +9,11 @@ select opt in "${options[@]}"
 do
     case $opt in
         "[Telkomsel] Gamemax")
-            ./brf -f 118.98.95.120:443 -w akamai.net:443
+            ./Brainfuck/brf -f 118.98.95.120:443 -w akamai.net:443
             break
             ;;
         "[Indosat] Ilmupedia")
-            ./brf -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
+            ./Brainfuck/brf -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
             break
             ;;
         "[XL] Dirumah aja 3GB")
