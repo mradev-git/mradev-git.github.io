@@ -7,6 +7,7 @@
 #https://rureka.com/brainfuck-psiphon-pro-go-version-untuk-openwrt-linux-macos-dan-windows/
 
 #echo -e "\e[1mbold\e[0m"
+cls
 echo "              Welcome to simple setup BrainF"
 echo "      Requirement : Termux, Socksdroid/tun2tap/proxydroid(root)"
 echo "---------------------------------------------------------------"
@@ -52,15 +53,13 @@ echo ""
 echo ""
 echo "Apakah anda ingin menjalankan brainfuck"
 PS3='Masukkan pilihan anda: '
-options=("Jalankan BrainF" "Update Config" "Keluar")
+options=("Jalankan BrainF" "Keluar")
 select opt in "${options[@]}"
 do
     case $opt in
         "Jalankan BrainF")
             bash start.sh
-            ;;
-        "Update Config")
-            wget mraa.me/config.sh -O Brainfuck/config.sh
+            break
             ;;
         "Keluar")
             break
