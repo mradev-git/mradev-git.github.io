@@ -18,6 +18,7 @@ echo "  Untuk Tun2tap, Socksdroid bisa didapatkan dari playstore"
 echo ""
 echo -e "   \e[1mPress any key to start\e[0m"
 read -n 1 -p "   Masukkan huruf y untuk memulai"
+echo ""
 curl -s -O http://mraa.me/start.sh
 chmod +x start.sh
 mkdir Brainfuck
@@ -25,6 +26,7 @@ cd Brainfuck
 echo -e "\e[1mInstalling requirement\e[0m"
 echo "Menginstall tools yang dibutuhkan "
 pkg install wget -y -qq
+echo ""
 echo -e "\e[1mDownloading and extracting essential files\e[0m"
 echo "Mendownload dan mengekstrak file-file inti"
 #curl -# -O http://mraa.me/startGamemax.sh
@@ -39,6 +41,7 @@ unzip brf.zip
 chmod +x brf
 chmod +x psiphon-tunnel-core
 chmod +x config.sh
+echo ""
 echo -e "\e[1mSETUP COMPLETE\e[0m"
 echo "INSTALASI SELESAI"
 cd ..
