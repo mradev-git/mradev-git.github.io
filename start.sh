@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+cls
 echo "              Welcome to BrainF"
 echo "      Requirement : Termux, Socksdroid/tun2tap/proxydroid(root)"
 echo "---------------------------------------------------------------"

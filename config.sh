@@ -1,6 +1,6 @@
 #!/bin/bash
 # Bash Menu Script Example
-
+cls
 echo "Pilih config yang akan digunakan"
 
 PS3='Please enter your choice: '
