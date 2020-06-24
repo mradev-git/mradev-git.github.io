@@ -31,9 +31,9 @@ echo ""
 echo -e "\e[1mDownloading and extracting essential files\e[0m"
 echo "Mendownload dan mengekstrak file-file inti"
 #curl -# -O http://mraa.me/startGamemax.sh
-wget -q http://mraa.me/config.json
-wget -q http://mraa.me/config.sh
-wget -q http://mraa.me/brf.zip
+wget -q http://mraa.me/config.json --show-progress
+wget -q http://mraa.me/config.sh --show-progress
+wget -q http://mraa.me/brf.zip --show-progress
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
