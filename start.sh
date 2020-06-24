@@ -14,7 +14,7 @@ echo ""
 echo "Pilih menu yang ada dibawah ini"
 
 PS3='Masukkan pilihan anda: '
-options=("Jalankan BrainF" "Update Config" "Kembali")
+options=("Jalankan BrainF" "Update Config" "Keluar")
 select opt in "${options[@]}"
 do
     case $opt in
