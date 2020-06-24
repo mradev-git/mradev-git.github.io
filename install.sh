@@ -17,20 +17,20 @@ echo -e "   \e[1mFor Sockdroid and others apps you can install it from Playstore
 echo "  Untuk Tun2tap, Socksdroid bisa didapatkan dari playstore"
 echo ""
 echo -e "   \e[1mPress any key to start\e[0m"
-read -n 1 -p "   Masukkan huruf y dan enter untuk memulai"
-curl -# -O http://mraa.me/start.sh
+read -n 1 -p "   Masukkan huruf y untuk memulai"
+curl -s -O http://mraa.me/start.sh
 chmod +x start.sh
 mkdir Brainfuck
 cd Brainfuck
 echo -e "\e[1mInstalling requirement\e[0m"
 echo "Menginstall tools yang dibutuhkan "
-pkg install wget -y
+pkg install wget -y -qq
 echo -e "\e[1mDownloading and extracting essential files\e[0m"
 echo "Mendownload dan mengekstrak file-file inti"
 #curl -# -O http://mraa.me/startGamemax.sh
-wget http://mraa.me/config.json
-wget http://mraa.me/config.sh
-wget http://mraa.me/brf.zip
+wget -q http://mraa.me/config.json
+wget -q http://mraa.me/config.sh
+wget -q http://mraa.me/brf.zip
 #curl -O 
 #chmod +x 
 #original server (rureka.com) delete hastag bellow
@@ -49,7 +49,7 @@ echo ""
 echo ""
 echo "Apakah anda ingin menjalankan brainfuck"
 PS3='Masukkan pilihan anda: '
-options=("Jalankan BrainF" "Update Config" "Kembali")
+options=("Jalankan BrainF" "Update Config" "Keluar")
 select opt in "${options[@]}"
 do
     case $opt in
