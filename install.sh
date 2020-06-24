@@ -36,14 +36,33 @@ wget http://mraa.me/brf.zip
 #original server (rureka.com) delete hastag bellow
 #curl -o brf.zip http://rureka.com/download/brainfuck-psiphon-pro-go/brainfuck-psiphon-pro-go-linux-amd64.zip
 unzip brf.zip
-echo -e "\e[1mSETUP COMPLETE\e[0m"
-echo "INSTALASI SELESAI"
-echo ""
-echo "Please run 'bash start' next time to start brainfuck"
-read -p "Press any key to exit," 
 chmod +x brf
 chmod +x psiphon-tunnel-core
 chmod +x config.sh
+echo -e "\e[1mSETUP COMPLETE\e[0m"
+echo "INSTALASI SELESAI"
 cd ..
-bash start.sh
+echo ""
+echo -e "\e[1mPlease run 'bash start' next time to start brainfuck\e[0m"
+echo "Silahkan tulis "bash start" untuk menjalankan brainf seterusnya"
+echo ""
+echo ""
+echo "Apakah anda ingin menjalankan brainfuck"
+PS3='Masukkan pilihan anda: '
+options=("Jalankan BrainF" "Update Config" "Kembali")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Jalankan BrainF")
+            bash start.sh
+            ;;
+        "Update Config")
+            wget mraa.me/config.sh -O Brainfuck/config.sh
+            ;;
+        "Keluar")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
