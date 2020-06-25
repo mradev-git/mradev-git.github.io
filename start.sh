@@ -19,11 +19,11 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Jalankan BrainF")
-            ./Brainfuck/config.sh
+            ./brainfuck/config.sh
             break
             ;;
         "Update Config")
-            wget mraa.me/config.sh -O Brainfuck/config.sh
+            wget mraa.me/config.sh -O brainfuck/config.sh
             break
             ;;
         "Keluar")
