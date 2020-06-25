@@ -7,7 +7,7 @@
 #https://rureka.com/brainfuck-psiphon-pro-go-version-untuk-openwrt-linux-macos-dan-windows/
 
 #echo -e "\e[1mbold\e[0m"
-cls
+clear
 echo "              Welcome to simple setup BrainF"
 echo "      Requirement : Termux, Socksdroid/tun2tap/proxydroid(root)"
 echo "---------------------------------------------------------------"
