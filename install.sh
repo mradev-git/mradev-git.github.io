@@ -20,8 +20,8 @@ echo ""
 echo -e "   \e[1mPress any key to start\e[0m"
 read -n 1 -p "   Masukkan huruf y untuk memulai"
 echo ""
-curl -s -O http://mraa.me/start.sh
-chmod +x start.sh
+curl -s -O http://mraa.me/start
+chmod +x start
 mkdir brainfuck
 cd brainfuck
 echo -e "\e[1mInstalling requirement\e[0m"
