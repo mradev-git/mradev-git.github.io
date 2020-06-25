@@ -9,15 +9,15 @@ select opt in "${options[@]}"
 do
     case $opt in
         "[Telkomsel] Gamemax")
-            ./brainfuck/brf -f 118.98.95.120:443 -w akamai.net:443
+            ./brainfuck/brainfuck-psiphon-pro-go -f 118.98.95.120:443 -w akamai.net:443
             break
             ;;
         "[Indosat] Ilmupedia")
-            ./brainfuck/brf -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
+            ./brainfuck/brainfuck-psiphon-pro-go -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
             break
             ;;
         "[XL] Dirumah aja 3GB")
-            ./brainfuck/brf -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
+            ./brainfuck/brainfuck-psiphon-pro-go -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
             break
             ;;
         "Kembali")
