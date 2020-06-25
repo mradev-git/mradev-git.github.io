@@ -9,7 +9,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "[Telkomsel] Gamemax")
-            ./brainfuck/brainfuck-psiphon-pro-go -f 118.98.95.120:443 -w akamai.net:443
+            ./brainfuck/brainfuck-psiphon-pro-go -f 118.98.95.120:443,114.120.225.155:443 -w akamai.net:443
             break
             ;;
         "[Indosat] Ilmupedia")
