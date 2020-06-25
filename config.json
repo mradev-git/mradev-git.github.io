@@ -15,7 +15,7 @@
 		},
 		"Payload": "",
 		"Timeout": 5,
-		"ServerNameIndication": "www.google.com",
+		"ServerNameIndication": "twitter.com",
 		"ShowLog": false
 	},
 	"PsiphonCore": 20,
