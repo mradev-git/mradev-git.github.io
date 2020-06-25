@@ -17,7 +17,7 @@ do
             break
             ;;
         "[XL] Dirumah aja 3GB")
-            echo "On Progress"
+            ./brainfuck/brf -f c.shared.global.fastly.net:443,rg-video.ruangguru.com:443 -w fastly.net:443
             break
             ;;
         "Kembali")
